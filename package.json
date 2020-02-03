@@ -1,0 +1,22 @@
+{
+  "name": "trelloreminder",
+  "version": "1.0.0",
+  "description": "Simple app to remind about recurring events",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "123"
+  },
+  "keywords": [
+    "trello",
+    "reminder"
+  ],
+  "author": "rezox",
+  "license": "ISC",
+  "dependencies": {
+    "config": "^3.2.5"
+  }
+}
