@@ -17,6 +17,8 @@
   "author": "rezox",
   "license": "ISC",
   "dependencies": {
-    "config": "^3.2.5"
+    "config": "^3.2.5",
+    "express": "^4.17.1",
+    "trello": "^0.10.0"
   }
 }
