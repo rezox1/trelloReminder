@@ -4,11 +4,12 @@
   "description": "Simple app to remind about recurring events",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node ./src/index.js"
   },
   "repository": {
     "type": "git",
-    "url": "123"
+    "url": "https://github.com/rezox1/trelloReminder"
   },
   "keywords": [
     "trello",
@@ -19,6 +20,7 @@
   "dependencies": {
     "config": "^3.2.5",
     "express": "^4.17.1",
+    "log4js": "^6.1.1",
     "trello": "^0.10.0"
   }
 }

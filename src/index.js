@@ -1,10 +1,21 @@
-process.env["NODE_CONFIG_DIR"] = '../config';
 const config = require('config');
 
-const app = require("express");
+const TrelloApp = require("trello");
 
-const trello = require("trello");
+const TRELLO_APP_KEY = config.get("trello.applicationKey"),
+	TRELLO_TOKEN = config.get("trello.userToken");
 
-console.log(config.get("web.port"));
+const myTrelloApp = new TrelloApp(TRELLO_APP_KEY, TRELLO_TOKEN);
 
-console.log(123);
+const TO_DO_LIST_ID = "5c324675614e3e84678d2ebb";
+
+(async () => {
+	try {
+		await myTrelloApp.addCard('Заменить зубную счетку', '', TO_DO_LIST_ID);
+		console.log("new card added");
+	} catch (err) {
+		console.error(err);
+	}
+})();
+
+//const DATA_PATH = congig.get("data.path");
